@@ -11,7 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140518075517) do
+ActiveRecord::Schema.define(version: 20140518084232) do
+
+  create_table "guesses", force: true do |t|
+    t.integer  "painting_id"
+    t.decimal  "guess_amount", precision: 16, scale: 2
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "paintings", force: true do |t|
     t.string   "name"

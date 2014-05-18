@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  painting_id: 1
+  guess_amount: 9.99
+
+two:
+  painting_id: 1
+  guess_amount: 9.99
