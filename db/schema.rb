@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140518084232) do
+ActiveRecord::Schema.define(version: 20140519053839) do
 
   create_table "guesses", force: true do |t|
     t.integer  "painting_id"
@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(version: 20140518084232) do
     t.decimal  "mean_guess_amount", precision: 16, scale: 2
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "count"
   end
 
 end
